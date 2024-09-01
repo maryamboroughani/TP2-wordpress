@@ -60,6 +60,23 @@
 			}
 			?>
 
+<?php
+
+// Add social media links
+?>
+<div class="footer-social">
+    <a href="https://www.facebook.com/LeCreusetCanada/" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com/lecreusetcanada?lang=fr" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-logo.png" alt="Twitter">
+    </a>
+</div>
+<?php
+// Existing footer content
+?>
+
+
 			
 
 		</div><!-- .site-info -->

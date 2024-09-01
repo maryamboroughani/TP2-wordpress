@@ -1,0 +1,16 @@
+
+
+/* WYSIWYG Styles */
+.wysiwyg p {
+    margin: 0 0 1em;
+}
+.wysiwyg h1, .wysiwyg h2, .wysiwyg h3 {
+    margin: 0 0 0.5em;
+}
+.wysiwyg a {
+    color: #0073aa;
+    text-decoration: none;
+}
+.wysiwyg a:hover {
+    text-decoration: underline;
+}

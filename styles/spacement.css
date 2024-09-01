@@ -1,0 +1,21 @@
+.mt-small{
+    margin-top: 20px;
+}
+.mt-medium{
+
+}
+
+.mt-large{
+    
+}
+
+/* Spacing Styles */
+.container {
+    padding: 0 15px;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.padding-top {
+    padding-top: 20px;
+}

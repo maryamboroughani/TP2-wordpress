@@ -10,4 +10,11 @@ Version: 2.3.1725197452
 Updated: 2024-09-01 09:30:52
 
 */
+/* Importing CSS files from the 'styles' folder */
+@import url('styles/reset.php');
+@import url('styles/espacement.php');
+@import url('styles/wysiwyg.php');
+@import url('styles/wrapper.php');
+@import url('styles/accueil.php');
 
+/* Additional global styles can be added here */
