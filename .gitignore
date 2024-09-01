@@ -1,0 +1,31 @@
+# Ignore parent theme files
+/../twentytwentyone/
+
+# Ignore WordPress core files
+/wp-content/plugins/*
+/wp-content/uploads/*
+/wp-content/cache/*
+
+# Ignore development environment files
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+
+# Ignore editor-specific files
+*.idea
+*.vscode
+
+# Ignore Node.js dependencies (if any)
+node_modules/
+
+# Ignore Composer dependencies (if any)
+vendor/
+
+# Ignore build directories (if any)
+build/
+dist/
+
+# Ignore environment-specific files
+.env
