@@ -1,53 +1,28 @@
 <?php
-// Exit if accessed directly
-if ( !defined( 'ABSPATH' ) ) exit;
 
 /**
- * Modify locale stylesheet URI
+ * Add parent theme styles.
  */
-if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
-    function chld_thm_cfg_locale_css( $uri ){
-        if ( empty( $uri ) && is_rtl() && file_exists( get_template_directory() . '/rtl.css' ) )
-            $uri = get_template_directory_uri() . '/rtl.css';
-        return $uri;
-    }
-endif;
-add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
+function ttoc_styles() {
+    wp_enqueue_style('ttoc-style', get_stylesheet_uri(), array('twenty-twenty-one-style'));
+}
+add_action('wp_enqueue_scripts', 'ttoc_styles');
 
 /**
- * Enqueue child theme stylesheet
+ * Enqueue child theme styles.
  */
-if ( !function_exists( 'child_theme_configurator_css' ) ):
-    function child_theme_configurator_css() {
-        wp_enqueue_style( 'chld_thm_cfg_child', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array( 'twenty-twenty-one-custom-color-overrides', 'twenty-twenty-one-style', 'twenty-twenty-one-print-style' ) );
-    }
-endif;
-add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
+function enqueue_custom_styles() {
+    // Enqueue the main stylesheet which imports all other styles
+    wp_enqueue_style('child-theme-style', get_stylesheet_directory_uri() . '/style.css', array(), wp_get_theme()->get('Version'));
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 
 /**
- * Remove editor from pages
+ * Remove editor from pages.
  */
 function ttoc_supprime_editeur_page() {
-    remove_post_type_support( 'page', 'editor' );
+    remove_post_type_support('page', 'editor');
 }
-add_action( 'init', 'ttoc_supprime_editeur_page', 15 );
+add_action('init', 'ttoc_supprime_editeur_page', 15);
 
-/**
- * Create custom post type 'article'
- */
-function create_custom_post_type() {
-    register_post_type('article',
-        array(
-            'labels' => array(
-                'name' => __('Articles'),
-                'singular_name' => __('Article')
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'supports' => array('title', 'editor', 'thumbnail'),
-            'rewrite' => array('slug' => 'articles'), // Optional: Custom slug
-        )
-    );
-}
-add_action('init', 'create_custom_post_type');
-?>
+
