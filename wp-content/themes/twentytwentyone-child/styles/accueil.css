@@ -1,0 +1,44 @@
+/* Styles for the hero section on the homepage */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.hero .intro {
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Tile grid layout */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.articles-grid .tile {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.articles-grid .tile:hover {
+    transform: scale(1.05);
+}
+
+.articles-grid .tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

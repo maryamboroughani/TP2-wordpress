@@ -1,0 +1,47 @@
+/* General styling for tuile tiles */
+.tuile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tuile:hover {
+    transform: translateY(-5px);
+}
+
+.tuile-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tuile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tuile-content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.tuile-title {
+    font-size: 1.25rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.tuile-categorie, .tuile-prix {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.tuile-prix {
+    font-weight: bold;
+}

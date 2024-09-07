@@ -1,0 +1,36 @@
+/* Utility classes for spacing */
+.mg-top-small {
+    margin-top: 10px;
+}
+
+.mg-top-medium {
+    margin-top: 20px;
+}
+
+.mg-top-large {
+    margin-top: 40px;
+}
+
+.mg-bottom-small {
+    margin-bottom: 10px;
+}
+
+.mg-bottom-medium {
+    margin-bottom: 20px;
+}
+
+.mg-bottom-large {
+    margin-bottom: 40px;
+}
+
+.pd-small {
+    padding: 10px;
+}
+
+.pd-medium {
+    padding: 20px;
+}
+
+.pd-large {
+    padding: 40px;
+}
