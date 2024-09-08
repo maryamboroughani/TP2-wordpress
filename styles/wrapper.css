@@ -1,6 +1,52 @@
-
-/* Wrapper Styles */
+/* General wrapper styles */
 .wrapper {
-    max-width: 1200px;
+    max-width: 400px;
     margin: 0 auto;
+    padding: 20px;
+  
 }
+
+/* Centering content inside wrapper */
+.wrapper.center {
+    text-align: center;
+}
+
+.wrapper h1,
+.wrapper h2 {
+    font-family: 'Helvetica, Arial, sans-serif';
+    color: #333;
+    text-align: center;
+}
+
+.wrapper p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.wrapper-article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* General Styles for Article */
+.wrapper-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.wrapper-article h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+

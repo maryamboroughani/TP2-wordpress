@@ -1,31 +1,14 @@
-# Ignore parent theme files
-/../twentytwentyone/
+# Ignore everything
+*
 
-# Ignore WordPress core files
-/wp-content/plugins/*
-/wp-content/uploads/*
-/wp-content/cache/*
+# Allow the twentytwentyonechild directory and its contents
+!/twentytwentyonechild/
+!/twentytwentyonechild/**/
 
-# Ignore development environment files
-*.log
-*.tmp
-*.bak
-*.swp
-*.DS_Store
+# Optionally, you may want to include specific file types
+!/twentytwentyonechild/*.php
+!/twentytwentyonechild/*.css
+!/twentytwentyonechild/*.js
 
-# Ignore editor-specific files
-*.idea
-*.vscode
-
-# Ignore Node.js dependencies (if any)
-node_modules/
-
-# Ignore Composer dependencies (if any)
-vendor/
-
-# Ignore build directories (if any)
-build/
-dist/
-
-# Ignore environment-specific files
-.env
+# Ignore other directories if necessary
+# /other-directory/

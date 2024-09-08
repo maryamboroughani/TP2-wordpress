@@ -1,8 +1,7 @@
-
-
 /* WYSIWYG Styles */
 .wysiwyg p {
     margin: 0 0 1em;
+    padding: 10px;
 }
 .wysiwyg h1, .wysiwyg h2, .wysiwyg h3 {
     margin: 0 0 0.5em;

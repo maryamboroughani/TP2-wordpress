@@ -1,48 +1,25 @@
-
-
-/* Homepage Styles */
-.hero-section {
+/* Styles for the hero section on the homepage */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-size: cover;
     background-position: center;
     height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+}
+
+.hero .intro {
+    font-size: 2rem;
     color: #fff;
-}
-
-.hero-section h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.introduction {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    text-align: center;
-    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
-.articles-grid {
-    padding: 20px;
-}
-
-.category-grid {
+.container{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-.article-tile {
-    width: calc(25% - 20px);
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
 
-.article-tile:hover {
-    transform: scale(1.05);
-}
+

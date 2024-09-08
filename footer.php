@@ -12,14 +12,11 @@
  */
 
 ?>
-			</main><!-- #main -->
-		</div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 	</div><!-- #content -->
 
-
-
 	<footer id="colophon" class="site-footer">
-
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
@@ -39,6 +36,7 @@
 				</ul><!-- .footer-navigation-wrapper -->
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
+
 		<div class="site-info">
 			<div class="site-name">
 				<?php if ( has_custom_logo() ) : ?>
@@ -60,24 +58,16 @@
 			}
 			?>
 
-<?php
-
-// Add social media links
-?>
+		<!-- Add social media links -->
 <div class="footer-social">
     <a href="https://www.facebook.com/LeCreusetCanada/" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-logo.png" alt="Facebook">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/facebook-logo.png' ); ?>" alt="Facebook">
     </a>
     <a href="https://twitter.com/lecreusetcanada?lang=fr" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-logo.png" alt="Twitter">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/twitter-logo.png' ); ?>" alt="Twitter">
     </a>
-</div>
-<?php
-// Existing footer content
-?>
+</div><!-- .footer-social -->
 
-
-			
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

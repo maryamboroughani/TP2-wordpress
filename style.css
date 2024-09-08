@@ -1,20 +1,18 @@
 /*
 Theme Name: Twenty Twenty-One Child
-Theme URI: https://wordpress.org/themes/twentytwentyone/
 Template: twentytwentyone
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
-Tags: one-column,accessibility-ready,custom-colors,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,block-patterns,rtl-language-support,sticky-post,threaded-comments,translation-ready,blog,portfolio
-Version: 2.3.1725197452
-Updated: 2024-09-01 09:30:52
+Author: Maryam Boroughani
+Version: 1
+
 
 */
 /* Importing CSS files from the 'styles' folder */
-@import url('styles/reset.php');
-@import url('styles/espacement.php');
-@import url('styles/wysiwyg.php');
-@import url('styles/wrapper.php');
-@import url('styles/accueil.php');
+@import url('styles/reset.css');
+@import url('styles/espacement.css');
+@import url('styles/wysiwyg.css');
+@import url('styles/wrapper.css');
+@import url('styles/accueil.css');
+@import url('styles/tuile.css');
+@import url('styles/article.css');
 
-/* Additional global styles can be added here */
+
